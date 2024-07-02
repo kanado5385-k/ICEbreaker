@@ -207,7 +207,7 @@ const ShowPage = () => {
                             <p>{article.category === 0 ? "요청" : "일반"}</p>
                         </div>
                         <div className="ArticleTitle">
-                            <h1>{article.articleTitle}</h1>
+                            <p>{article.articleTitle}</p>
                         </div>
                         <div className="ArticleDate">
                             <p>{formatDate(article.articleDate)}</p>
@@ -244,7 +244,7 @@ const ShowPage = () => {
                                     </div>
                                 ))}
                             </div>
-                                {userDetails.email === 'jinwoo1234@naver.com' && (
+                                
                                     <div className="CommentBox-bottom">
                                         <textarea
                                             className="comment-input-area"
@@ -261,7 +261,7 @@ const ShowPage = () => {
                                             style={{ width: '100%' }}
                                         />
                                     </div>
-                                )}
+                                
                             </div>
                         </div>
                     

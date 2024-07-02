@@ -14,7 +14,7 @@ const InnerSection = () => {
       try {
         const response = await getArticleListRequest();
         const { articleList } = response;
-        const topPosts = articleList.slice(0, 3).map(article => ({
+        const topPosts = articleList.slice(0, 4).map(article => ({
           articleNum: article.articleNum,
           articleTitle: article.articleTitle
         }));
